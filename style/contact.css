@@ -1,0 +1,111 @@
+/* Style for the Contact section */
+.contact-container {
+    text-align: center;
+}
+
+.contact-label {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.contact-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: #3498db15;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon i {
+    font-size: 1.8rem;
+    color: #3498db;
+}
+
+.contact-info h4 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.contact-detail {
+    display: block;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.contact-detail:hover {
+    color: #2980b9;
+}
+
+.social-links {
+    margin-top: 25px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.social-link {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.social-link:hover {
+    background: #f8f9fa;
+    color: #3498db;
+}
+
+.cv-download {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #3498db;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cv-download:hover {
+    background: #2980b9;
+}
+
+.cv-download-container {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .contact-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}

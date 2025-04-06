@@ -1,0 +1,17 @@
+/* Style for the Curriculum section */
+.curriculum-card {
+    border-radius: 10px;
+    background: #f9f9f9;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.curriculum-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.curriculum-info {
+    padding: 20px;
+}

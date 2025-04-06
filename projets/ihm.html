@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/projectPage.css">
+    <title>Application Quixo MAUI - Johan Valentin</title>
+    <script src="../script/projets.js"></script>
+    <script src="../script/top_button.js"></script>
+</head>
+<body>
+    <header id="project-header">
+        <h1>Application Quixo MAUI</h1>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html#about-me" class="nav-item">À Propos de Moi</a>
+            <a href="../index.html#hobbies" class="nav-item">Passions</a>
+            <a href="../index.html#curriculum" class="nav-item">Cursus</a>
+            <a href="../index.html#skills" class="nav-item">Compétences</a>
+            <div class="nav-item">
+                <a href="../index.html#projects">
+                    Projets
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="../index.html#school-projects" class="nav-item">Projets Académiques</a>
+                    <a href="../index.html#personal-projects" class="nav-item">Projets Personnels</a>
+                </div>
+            </div>
+            <a href="../index.html#contact" class="nav-item">Contacts</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="project-hero">
+            <article class="section-card">
+                <h2>Application Quixo MAUI</h2>
+                <div class="project-hero-grid">
+                    <div class="project-header-content">
+                        <span class="project-badge academic-badge">
+                            <i class="fas fa-university"></i>
+                            Projet Académique
+                        </span>
+                        <p class="project-excerpt">
+                            En groupe de trois, nous avons développé un jeu avec le framework .NET MAUI.
+                            Ce projet est le plus important que j'ai réalisé et s'étendait sur quatre mois.
+                            Il impliquait la création de vues, une application console, un bot,
+                            ainsi que le data-binding et la persistance de données.
+                        </p>
+                        
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>2023-2024</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>Équipe de 3</span>
+                            </div>
+                        </div>
+        
+                        <div class="skill-tags">
+                            <span class="tech-item">
+                                <!-- <i class="fab fa-csharp"></i> -->
+                                <i class="fas fa-code"></i>
+                                C#
+                            </span>
+                            <span class="tech-item">
+                                <!-- <i class="fab fa-dotnet"></i> -->
+                                <i class="fas fa-code"></i>
+                                .NET MAUI
+                            </span>
+                        </div>
+                    </div>
+        
+                    <div class="project-hero-visuals">
+                        <div class="hero-image-container">
+                            <img src="../images/project/ihm/overview.png" alt="Aperçu du projet">
+                        </div>
+                        
+                        <div class="quick-links">
+                            <a href="#gallery" class="project-link">
+                                <i class="fas fa-images"></i>
+                                Voir la galerie
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="project-info">
+            <div class="section-card">
+                <h2 class="section-title">Description du Projet</h2>
+                <div class="project-content">
+                    <p>
+                        Ce projet, réalisé en groupe de trois,
+                        avait pour objectif de développer le jeu Quixo avec le framework .NET MAUI.
+                        S'étalant sur quatre mois, ce fut le projet le plus ambitieux auquel j'ai participé.
+                    </p>
+                    <p>
+                        Nous devions réaliser les vues, l'application console, un bot, le data-binding,
+                        ainsi que la persistance des données, afin de créer une application que l'on puisse déployer et
+                        qui soit utilisable par tous. J'ai contribué à divers aspects du projet,
+                        mais je me suis particulièrement concentré sur la réalisation des classes Plateau et Jeu,
+                        sur certaines vues et événements, ainsi que sur le binding des pages de score, de chargement de partie et du jeu lui même.
+                    </p>
+                    <p>
+                        Ce projet m'a permis de développer des compétences en gestion du temps
+                        et en organisation d'équipe pour mener à bien les tâches assignées.
+                    </p>
+                </div>
+
+                <div id="gallery">
+                    <h2>Galerie du Projet</h2>
+                    <div class="thumbnail-container">
+                        <div class="thumbnail-grid">
+                            <img src="../images/project/ihm/overview.png" alt="Aperçu du projet" class="thumbnail">
+                            <img src="../images/project/ihm/1.png" alt="Menu du jeu" class="thumbnail">
+                            <img src="../images/project/ihm/2.png" alt="Création d'une partie" class="thumbnail">
+                            <img src="../images/project/ihm/3.png" alt="Chargement de partie" class="thumbnail">
+                            <img src="../images/project/ihm/4.png" alt="Scores sauvegardé" class="thumbnail">
+                            <img src="../images/project/ihm/5.png" alt="Règles du jeu" class="thumbnail">
+                            <img src="../images/project/ihm/6.png" alt="Page de crédits" class="thumbnail">
+                            <img src="../images/project/ihm/7.png" alt="Page de Paramètres" class="thumbnail">
+                            <img src="../images/project/ihm/8.png" alt="Interface du jeu" class="thumbnail">
+                            <img src="../images/project/ihm/9.png" alt="Fin de partie" class="thumbnail">
+                        </div>
+                    </div>
+                    <button class="expand-button">
+                        <span class="show-more">Afficher plus</span>
+                        <span class="show-less">Afficher moins</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <div class="project-links">
+                    <a href="../index.html#projects" class="project-link">
+                        <i class="fas fa-arrow-left"></i>
+                        Retour aux projets
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-contact">
+            <a href="mailto:johan.valentin@proton.me">
+                <i class="fas fa-envelope"></i>
+                johan.valentin@proton.me
+            </a>
+            <a href="tel:+68024706">
+                <i class="fas fa-phone"></i>
+                06 38 02 47 06
+            </a>
+        </div>
+        <p>© 2025 Johan Valentin. Tous droits réservés.</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content" id="lightbox-content">
+            <div class="lightbox-main" id="lightbox-main">
+                <img id="lightbox-image" src="" alt="">
+                <div class="image-description"></div>
+            </div>
+            <div class="lightbox-thumbnails"></div>
+            <button class="nav-btn close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <button id="top-button" onclick="toTheTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</body>
+</html>

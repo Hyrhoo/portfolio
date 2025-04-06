@@ -1,0 +1,29 @@
+/* Style for the Section cards */
+section {
+    padding: 5px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.section-card h2 {
+    position: relative;
+    text-align: center;
+    text-decoration: underline #3498db;
+    text-underline-offset: 15px;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 2.5em;
+}
+
+.section-card h3 {
+    margin-top: 0;
+}

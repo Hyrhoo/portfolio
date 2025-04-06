@@ -1,0 +1,24 @@
+/* Style for the Hobby section */
+.hobby-card {
+    text-align: center;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.hobby-icon {
+    width: 60px;
+    height: 60px;
+    background: #3498db10;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 15px;
+}
+
+.hobby-icon i {
+    font-size: 1.8rem;
+    color: #3498db;
+}

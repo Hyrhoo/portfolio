@@ -1,0 +1,63 @@
+/* Style for the About me section */
+.location {
+    color: #7f8c8d;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tagline {
+    font-size: 1.3em;
+    color: #3498db;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 10px;
+    margin-top: 0;
+}
+
+.bio-details p {
+    color: #34495e;
+    line-height: 1.8;
+    margin-bottom: 0px;
+}
+
+.quick-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 15px 25px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    min-width: 120px;
+}
+
+.stat-number {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #3498db;
+}
+
+.stat-label {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .quick-stats {
+        justify-content: center;
+    }
+    
+    .skill-tags {
+        justify-content: center;
+    }
+    
+    .age-location {
+        justify-content: center;
+    }
+}

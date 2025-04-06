@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/projectPage.css">
+    <title>Tetris - Johan Valentin</title>
+    <script src="../script/projets.js"></script>
+    <script src="../script/top_button.js"></script>
+</head>
+<body>
+    <header id="project-header">
+        <h1>Tetris</h1>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html#about-me" class="nav-item">À Propos de Moi</a>
+            <a href="../index.html#hobbies" class="nav-item">Passions</a>
+            <a href="../index.html#curriculum" class="nav-item">Cursus</a>
+            <a href="../index.html#skills" class="nav-item">Compétences</a>
+            <div class="nav-item">
+                <a href="../index.html#projects">
+                    Projets
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="../index.html#school-projects" class="nav-item">Projets Académiques</a>
+                    <a href="../index.html#personal-projects" class="nav-item">Projets Personnels</a>
+                </div>
+            </div>
+            <a href="../index.html#contact" class="nav-item">Contacts</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="project-hero">
+            <article class="section-card">
+                <h2>Tetris</h2>
+                <div class="project-hero-grid">
+                    <div class="project-header-content">
+                        <span class="project-badge personal-badge">
+                            <i class="fas fa-code"></i>
+                            Personnel
+                        </span>
+                        <p class="project-excerpt">
+                            Lors de mes études au lycée, j'ai développé un jeu de Tetris en utilisant Python
+                            et la bibliothèque Pygame. Ce projet a été l'occasion de me familiariser
+                            avec la programmation orientée objet.
+                        </p>
+                        
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>2021-2022</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>Équipe de 1</span>
+                            </div>
+                        </div>
+        
+                        <div class="skill-tags">
+                            <span class="tech-item">
+                                <i class="fab fa-python"></i>
+                                Python
+                            </span>
+                            <span class="tech-item">
+                                <i class="fas fa-book"></i>
+                                Pygame
+                            </span>
+                        </div>
+                    </div>
+        
+                    <div class="project-hero-visuals">
+                        <div class="hero-image-container">
+                            <img src="../images/project/tetris/overview.png" alt="Aperçu du projet">
+                        </div>
+                        
+                        <div class="quick-links">
+                            <a href="#gallery" class="project-link">
+                                <i class="fas fa-images"></i>
+                                Voir la galerie
+                            </a>
+                            <a href="https://github.com/Hyrhoo/tetris" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code Source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="project-info">
+            <div class="section-card">
+                <h2 class="section-title">Description du Projet</h2>
+                <div class="project-content">
+                    <p class="project-description">
+                        Lors d'un projet individuel au lycée, j'ai développé un Tetris en Python
+                        en utilisant la bibliothèque Pygame pour l'interface graphique.
+                    </p>
+                    <p>
+                        Ce fut l'un de mes premiers projets à utiliser des classes, que j'ai implémentées pour les pièces du jeu,
+                        nécessitant des manipulations fréquentes ainsi que la création de nouvelles instances.
+                    </p>
+                    <p>
+                        J'ai repris les systèmes de points et de rotation des pièces des jeux officiels récents et j'ai géré différents timers
+                        pour les événements se produisant à des moments distincts.
+                        J'ai également ajouté une fonctionnalité de pause et implémenté la persistance des données
+                        pour permettre la personnalisation et la sauvegarde des touches.
+                    </p>
+                </div>
+
+                <div id="gallery">
+                    <h2>Galerie du Projet</h2>
+                    <div class="thumbnail-container">
+                        <div class="thumbnail-grid">
+                            <img src="../images/project/tetris/1.png" alt="Écran principal du jeu" class="thumbnail">
+                            <img src="../images/project/tetris/2.png" alt="Partie de jeu" class="thumbnail">
+                            <img src="../images/project/tetris/3.png" alt="Menu de changement de touches" class="thumbnail">
+                        </div>
+                    </div>
+                    <button class="expand-button">
+                        <span class="show-more">Afficher plus</span>
+                        <span class="show-less">Afficher moins</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <div class="project-links">
+                    <a href="../index.html#projects" class="project-link">
+                        <i class="fas fa-arrow-left"></i>
+                        Retour aux projets
+                    </a>
+                    <a href="https://github.com/Hyrhoo/tetris" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i>
+                        Code Source
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-contact">
+            <a href="mailto:johan.valentin@proton.me">
+                <i class="fas fa-envelope"></i>
+                johan.valentin@proton.me
+            </a>
+            <a href="tel:+68024706">
+                <i class="fas fa-phone"></i>
+                06 38 02 47 06
+            </a>
+        </div>
+        <p>© 2025 Johan Valentin. Tous droits réservés.</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content" id="lightbox-content">
+            <div class="lightbox-main" id="lightbox-main">
+                <img id="lightbox-image" src="" alt="">
+                <div class="image-description"></div>
+            </div>
+            <div class="lightbox-thumbnails"></div>
+            <button class="nav-btn close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <button id="top-button" onclick="toTheTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</body>
+</html>
