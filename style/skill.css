@@ -4,7 +4,7 @@
     padding: 25px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     border-left: 4px solid #3498db;
 }
 
@@ -24,4 +24,5 @@
     font-size: 0.9em;
     font-weight: 500;
     border: 1px solid #d4e6ff;
+    transition: 0.3s ease;
 }

@@ -3,36 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man - Johan Valentin</title>
+    <link rel="shortcut icon" href="../images/photo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/projectPage.css">
-    <title>Pac-Man - Johan Valentin</title>
     <script src="../script/projets.js"></script>
     <script src="../script/top_button.js"></script>
+    <script src="../script/nav.js"></script>
+    <script src="../script/theme-switch.js"></script>
 </head>
 <body>
+    <div class="theme-switch-wrapper">
+        <button id="theme-toggle" class="theme-button">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+        </button>
+    </div>
+    
+    <div id="background"></div>
     <header id="project-header">
         <h1>Pac-Man</h1>
     </header>
 
     <nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
         <div class="nav-container">
-            <a href="../index.html#about-me" class="nav-item">À Propos de Moi</a>
-            <a href="../index.html#hobbies" class="nav-item">Passions</a>
-            <a href="../index.html#curriculum" class="nav-item">Cursus</a>
-            <a href="../index.html#skills" class="nav-item">Compétences</a>
+            <a href="../index.html#about-me" class="nav-item">
+                <i class="fas fa-user menu-icon"></i>
+                À Propos de Moi
+            </a>
+            <a href="../index.html#hobbies" class="nav-item">
+                <i class="fas fa-heart menu-icon"></i>
+                Passions
+            </a>
+            <a href="../index.html#curriculum" class="nav-item">
+                <i class="fas fa-graduation-cap menu-icon"></i>
+                Cursus
+            </a>
+            <a href="../index.html#skills" class="nav-item">
+                <i class="fas fa-tools menu-icon"></i>
+                Compétences
+            </a>
             <div class="nav-item">
                 <a href="../index.html#projects">
+                    <i class="fas fa-folder-open menu-icon"></i>
                     Projets
                     <i class="fa-solid fa-caret-down"></i>
                 </a>
                 <div class="dropdown-menu">
-                    <a href="../index.html#school-projects" class="nav-item">Projets Académiques</a>
-                    <a href="../index.html#personal-projects" class="nav-item">Projets Personnels</a>
+                    <a href="../index.html#school-projects" class="nav-item">
+                        <i class="fas fa-university menu-icon"></i>
+                        Projets Académiques
+                    </a>
+                    <a href="../index.html#personal-projects" class="nav-item">
+                        <i class="fas fa-laptop-code menu-icon"></i>
+                        Projets Personnels
+                    </a>
                 </div>
             </div>
-            <a href="../index.html#contact" class="nav-item">Contacts</a>
+            <a href="../index.html#contact" class="nav-item">
+                <i class="fas fa-address-card menu-icon"></i>
+                Contacts
+            </a>
         </div>
+        <div class="menu-overlay"></div>
     </nav>
 
     <main>
@@ -42,7 +79,7 @@
                 <div class="project-hero-grid">
                     <div class="project-header-content">
                         <span class="project-badge personal-badge">
-                            <i class="fas fa-code"></i>
+                            <i class="fas fa-laptop-code"></i>
                             Personnel
                         </span>
                         <p class="project-excerpt">
@@ -133,7 +170,7 @@
                 </div>
 
                 <div class="project-links">
-                    <a href="../index.html#projects" class="project-link">
+                    <a onclick="history.back()" class="project-link">
                         <i class="fas fa-arrow-left"></i>
                         Retour aux projets
                     </a>
@@ -160,16 +197,18 @@
         <p>© 2025 Johan Valentin. Tous droits réservés.</p>
     </footer>
 
-    <div id="lightbox" class="lightbox">
-        <div class="lightbox-content" id="lightbox-content">
-            <div class="lightbox-main" id="lightbox-main">
-                <img id="lightbox-image" src="" alt="">
-                <div class="image-description"></div>
+    <div id="lightbox">
+        <div id="lightbox-content">
+            <div id="lightbox-main">
+                <a href="" target="_blank" id="lightbox-link">
+                    <img id="lightbox-image" src="" alt="">
+                    <div class="image-description"></div>
+                </a>
             </div>
             <div class="lightbox-thumbnails"></div>
-            <button class="nav-btn close-btn"><i class="fa-solid fa-xmark"></i></button>
-            <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-            <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            <button id="close-btn" class="nav-btn"><i class="fa-solid fa-xmark"></i></button>
+            <button id="prev-btn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+            <button id="next-btn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
         </div>
     </div>
 

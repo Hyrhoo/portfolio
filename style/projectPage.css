@@ -28,7 +28,7 @@
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     height: 400px;
 }
 
@@ -107,18 +107,22 @@
     object-fit: cover;
     border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .thumbnail:hover {
     transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(77, 171, 247, 0.3)
 }
 
 .expand-button {
     width: 50%;
     padding: 10px;
     margin: 5px;
-    background: #f8f9fa;
+    /* background: #f8f9fa; */
+    /* background: #e9ecef; */
+    background: #f0f0f0;
     border: none;
     border-radius: 100px;
     cursor: pointer;
@@ -130,7 +134,7 @@
 }
 
 .expand-button:hover {
-    background: #e9ecef;
+    background: #d5d5d5;
 }
 
 .expand-button i {
@@ -165,7 +169,7 @@
 /*==============*/
 
 
-.lightbox {
+#lightbox {
     display: none;
     position: fixed;
     top: 0;
@@ -178,24 +182,34 @@
     overflow: hidden;
 }
 
-.lightbox-content {
+#lightbox-content {
     position: relative;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.lightbox-main {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#lightbox-image {
+#lightbox-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+#lightbox-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     max-width: 90%;
+}
+
+#lightbox-image {
+    max-width: 100%;
     max-height: 75vh;
     object-fit: contain;
     border-radius: 8px;
@@ -210,7 +224,6 @@
 }
 
 .lightbox-thumbnails {
-    bottom: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -255,10 +268,10 @@
     color: #3498db;
 }
 
-.prev-btn { left: 20px; }
-.next-btn { right: 20px; }
+#prev-btn { left: 20px; }
+#next-btn { right: 20px; }
 
-.close-btn {
+#close-btn {
     top: 30px;
     right: 30px;
 }

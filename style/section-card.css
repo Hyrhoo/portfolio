@@ -10,7 +10,7 @@ section {
     border-radius: 12px;
     padding: 30px;
     margin: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
 .section-card h2 {
@@ -26,4 +26,16 @@ section {
 
 .section-card h3 {
     margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .section-card {
+        padding: 20px;
+        margin: 10px 0px;
+    }
+    
+    .section-card h2 {
+        font-size: 2em;
+        text-underline-offset: 10px;
+    }
 }

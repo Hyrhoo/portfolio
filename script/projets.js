@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const lightboxContent = document.getElementById('lightbox-content');
     const lightboxMain = document.getElementById('lightbox-main');
     const lightboxImg = document.getElementById('lightbox-image');
+    const lightboxLink = document.getElementById('lightbox-link');
     const lightboxThumbnails = document.querySelector('.lightbox-thumbnails');
     const descriptionElement = document.querySelector('.image-description');
     let currentImageIndex = 0;
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateLightbox() {
         const currentImg = images[currentImageIndex];
+        lightboxLink.href = currentImg.src;
         lightboxImg.src = currentImg.src;
         descriptionElement.textContent = currentImg.alt;
         
@@ -50,18 +52,18 @@ document.addEventListener('DOMContentLoaded', function() {
         lightboxThumbnails.children[currentImageIndex].classList.add('active')
     }
 
-    document.querySelector('.prev-btn').addEventListener('click', () => {
+    document.getElementById('prev-btn').addEventListener('click', () => {
         currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
         updateLightbox();
     });
     
-    document.querySelector('.next-btn').addEventListener('click', () => {
+    document.getElementById('next-btn').addEventListener('click', () => {
         currentImageIndex = (currentImageIndex + 1) % images.length;
         updateLightbox();
     });
     
     // Close lightbox
-    document.querySelector('.close-btn').addEventListener('click', () => {
+    document.getElementById('close-btn').addEventListener('click', () => {
         lightbox.style.display = 'none';
         document.body.style.overflow = 'auto';
     });

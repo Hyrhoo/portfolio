@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conception de Base de Données - Johan Valentin</title>
+    <title>YouDebunk - Johan Valentin</title>
     <link rel="shortcut icon" href="../images/photo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../style/style.css">
@@ -23,7 +23,7 @@
     
     <div id="background"></div>
     <header id="project-header">
-        <h1>Conception de Base de Données</h1>
+        <h1>YouDebunk</h1>
     </header>
 
     <nav>
@@ -75,7 +75,7 @@
     <main>
         <section id="project-hero">
             <article class="section-card">
-                <h2>Conception de Base de Données</h2>
+                <h2>YouDebunk</h2>
                 <div class="project-hero-grid">
                     <div class="project-header-content">
                         <span class="project-badge academic-badge">
@@ -83,37 +83,41 @@
                             Projet Académique
                         </span>
                         <p class="project-excerpt">
-                            Dans le cadre de mes études, 
-                            j'ai travaillé en groupe de quatre pour concevoir une base de données
-                            pour une entreprise fictive de vente de meubles, inspirée d'Ikea.
+                            Dans un monde où les fake-news sont de plus en plus fréquentes, il devient crucial de disposer d'outils efficaces pour identifier et contrer la désinformation.
+                            C'est avec cette idée en tête, qu'en équipe de cinq, nous avons conçu YouDebunk, une application web et mobile dédiée à la lutte contre les fake-news.
+                            Le but de ce projet est de proposer aux utilisateurs une plateforme collaborative sur laquelle ils peuvent consilté et partager des articles vérifiés.
                         </p>
                         
                         <div class="project-meta">
                             <div class="meta-item">
                                 <i class="fas fa-calendar-alt"></i>
-                                <span>2023-2024</span>
+                                <span>2024-2025</span>
                             </div>
                             <div class="meta-item">
                                 <i class="fas fa-users"></i>
-                                <span>Équipe de 4</span>
+                                <span>Équipe de 5</span>
                             </div>
                         </div>
         
                         <div class="skill-tags">
                             <span class="tech-item">
+                                <i class="fa-brands fa-php"></i>
+                                PHP
+                            </span>
+                            <span class="tech-item">
                                 <i class="fas fa-database"></i>
                                 SQL
                             </span>
                             <span class="tech-item">
-                                <i class="fas fa-project-diagram"></i>
-                                Conception
+                                <i class="fa-brands fa-android"></i>
+                                Android
                             </span>
                         </div>
                     </div>
         
                     <div class="project-hero-visuals">
                         <div class="hero-image-container">
-                            <img src="../images/project/bdd/overview.png" alt="Aperçu du projet">
+                            <img src="../images/project/fake-news/overview-squar.png" alt="Aperçu du projet">
                         </div>
                         
                         <div class="quick-links">
@@ -132,22 +136,21 @@
                 <h2 class="section-title">Description du Projet</h2>
                 <div class="project-content">
                     <p>
-                        Ce projet consistait à imaginer et concevoir une base de données pour une entreprise vendant des produits.
-                        La base de données devait gérer les produits, les commandes, les producteurs,
-                        les clients, les adresses internationales et les taxes.
+                        Le projet YouDebunk regroupe une application web en PHP et une application mobile en Kotlin.
+                        Ces deux applications sont connectées à une base de données MySQL via une API, permettant un stockage centralisé des articles et des données utilisateurs.
                     </p>
                     <p>
-                        Ce projet a été réalisé en groupe de quatre et
-                        nous avons choisi de modéliser une entreprise type Ikea vendant des kits de meubles.
-                        En tant que passionné de conception de bases de données, j'ai pris l'initiative de la conception
-                        et je sollicitais les avis de mes coéquipiers.
+                        Les deux applications ont les mêmes fonctionnalités.
+                        Il est possible de consuliter des articles avec un pourcentage de vérification calculé automatiquement en fonction des sources.
+                        Les utilisateurs ont également la possibilité de voter pour les articles sans avoir à se connecter.
+                        En revanche, la publication d'un article requiert la créer un compte, soumis à validation préalable d'un administrateur.
                     </p>
                     <p>
-                        De par le domaine de l'entreprise choisi, nous avons dû créé des tables pour les meubles et les pièces les composant,
-                        ainsi que pour les fabricants de ces pièces.
-                        Une fois la base de données créée, nous avons effectué des requêtes. J'ai été le principale acteur de cette tâche
-                        en raison de mes compétences en bases de données.
-                        La complexité de notre base de données a rendu cette étape plus difficile que prévu.
+                        Il existe également une application administrateur en Blazor, qui permet de gérer les utilisateurs et d'obtenir des statistiques détaillées.
+                    </p>
+                    <p>
+                        Se déroulant sur toute l'année scolaire, ce projet à été un véritable défi nécéssitant une bonne organisation et une communication efficace au sein de l'équipe.
+                        Nous avons dû faire face à de nombreux défis techniques, notamment la gestion de l'API et l'intégration de fonctionnalités, comme le calcule automatique de la vérification.
                     </p>
                 </div>
 
@@ -155,8 +158,26 @@
                     <h2>Galerie du Projet</h2>
                     <div class="thumbnail-container">
                         <div class="thumbnail-grid">
-                            <img src="../images/project/bdd/1.png" alt="MCD de la Base de données" class="thumbnail">
-                            <img src="../images/project/bdd/2.png" alt="MLD de la Base de données" class="thumbnail">
+                            <img src="../images/project/fake-news/overview-squar.png" alt="Logo du site" class="thumbnail">
+                            <img src="../images/project/fake-news/web/login.svg" alt="Page de connection Web" class="thumbnail">
+                            <img src="../images/project/fake-news/web/sign-in.svg" alt="Page d'inscription Web" class="thumbnail">
+                            <img src="../images/project/fake-news/web/home.svg" alt="Page d'accueil Web" class="thumbnail">
+                            <img src="../images/project/fake-news/web/article-detail.svg" alt="page de détail d'article Web" class="thumbnail">
+                            <img src="../images/project/fake-news/web/article-edit.svg" alt="page d'édition d'article Web" class="thumbnail">
+                            <img src="../images/project/fake-news/web/profile.svg" alt="Page de profile Web" class="thumbnail">
+                            <img src="../images/project/fake-news/web/users.svg" alt="Page des utilisateurs Web" class="thumbnail">
+                            <img src="../images/project/fake-news/web/demandes.svg" alt="Page de demandes Web" class="thumbnail">
+                            <img src="../images/project/fake-news/mobile/login.png" alt="Page de connection Mobile" class="thumbnail">
+                            <img src="../images/project/fake-news/mobile/sign-in.png" alt="Page d'inscription Mobile" class="thumbnail">
+                            <img src="../images/project/fake-news/mobile/home.png" alt="Page d'accueil Mobile" class="thumbnail">
+                            <img src="../images/project/fake-news/mobile/article-detail-1.png" alt="Page de détail d'article Mobile 1" class="thumbnail">
+                            <img src="../images/project/fake-news/mobile/article-detail-2.png" alt="Page de détail d'article Mobile 2" class="thumbnail">
+                            <img src="../images/project/fake-news/mobile/article-detail-3.png" alt="Page de détail d'article Mobile sans surlignage" class="thumbnail">
+                            <img src="../images/project/fake-news/mobile/article-edit-1.png" alt="Page d'édite d'article Mobile 1" class="thumbnail">
+                            <img src="../images/project/fake-news/mobile/article-edit-2.png" alt="Page d'édite d'article Mobile 2" class="thumbnail">
+                            <img src="../images/project/fake-news/mobile/profile.png" alt="Page de profile Mobile" class="thumbnail">
+                            <img src="../images/project/fake-news/mobile/users.png" alt="Page des utilisateurs Mobile" class="thumbnail">
+                            <img src="../images/project/fake-news/mobile/demandes.png" alt="Page des demandes Mobile" class="thumbnail">
                         </div>
                     </div>
                     <button class="expand-button">
