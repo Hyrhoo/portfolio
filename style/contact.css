@@ -83,7 +83,7 @@
 
 .cv-download {
     display: inline-block;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 12px 25px;
     background: #3498db;
     color: #fff;
@@ -102,6 +102,10 @@
     margin-top: 40px;
     padding-top: 30px;
     border-top: 1px solid #eee;
+}
+
+.cv-download-container .cv-download {
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
