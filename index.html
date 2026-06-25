@@ -1,113 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Johan Valentin</title>
-    <link rel="shortcut icon" href="images/photo.png">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio Johan Valentin</title>
+        <link rel="shortcut icon" href="images/photo.png" />
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style/style.css">
-    <script src="script/top_button.js"></script>
-    <script src="script/nav.js"></script>
-    <script src="script/theme-switch.js"></script>
-    <script>
-    if (window.location.href.endsWith('portfolio')) {
-        window.location.href = window.location.href + '/';
-    }
-    </script>
-</head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style/style.css" />
+        <script src="script/top_button.js"></script>
+        <script src="script/nav.js"></script>
+        <script src="script/theme-switch.js"></script>
+        <script>
+            if (window.location.href.endsWith("portfolio")) {
+                window.location.href = window.location.href + "/";
+            }
+        </script>
+    </head>
 
-<body>
-    <div class="theme-switch-wrapper">
-        <button id="theme-toggle" class="theme-button">
-            <i class="fas fa-sun sun-icon"></i>
-            <i class="fas fa-moon moon-icon"></i>
-        </button>
-    </div>
-    
-    <div id="background"></div>
-    <header id="about">
-        <img src="images/photo.png" alt="Profile Photo" class="profile-pic">
-        <div>
-            <h1>Johan Valentin</h1>
-            <p>20 ans | Étudiant en informatique</p>
+    <body>
+        <div class="theme-switch-wrapper">
+            <button id="theme-toggle" class="theme-button">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
         </div>
-    </header>
-    <nav>
-        <div class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="nav-container">
-            <a href="#about-me" class="nav-item">
-                <i class="fas fa-user menu-icon"></i>
-                À Propos de Moi
-            </a>
-            <a href="#hobbies" class="nav-item">
-                <i class="fas fa-heart menu-icon"></i>
-                Passions
-            </a>
-            <a href="#curriculum" class="nav-item">
-                <i class="fas fa-graduation-cap menu-icon"></i>
-                Cursus
-            </a>
-            <a href="#skills" class="nav-item">
-                <i class="fas fa-tools menu-icon"></i>
-                Compétences
-            </a>
-            <div class="nav-item">
-                <a href="#projects">
-                    <i class="fas fa-folder-open menu-icon"></i>
-                    Projets
-                    <i class="fas fa-caret-down"></i>
-                </a>
-                <div class="dropdown-menu">
-                    <a href="#school-projects" class="nav-item">
-                        <i class="fas fa-university menu-icon"></i>
-                        Projets Académiques
-                    </a>
-                    <a href="#personal-projects" class="nav-item">
-                        <i class="fas fa-laptop-code menu-icon"></i>
-                        Projets Personnels
-                    </a>
-                </div>
+
+        <div id="background"></div>
+        <header id="about">
+            <img
+                src="images/photo.png"
+                alt="Profile Photo"
+                class="profile-pic"
+            />
+            <div>
+                <h1>Johan Valentin</h1>
+                <p>
+                    <span id="hero-age">20</span> ans | Étudiant en informatique
+                </p>
             </div>
-            <a href="#contact" class="nav-item">
-                <i class="fas fa-address-card menu-icon"></i>
-                Contacts
-            </a>
-        </div>
-        <div class="menu-overlay"></div>
-    </nav>
-    
-    <main>
-        <section id="about-me">
-            <article class="section-card">
-                <h2>À Propos de Moi</h2>
-                
-                <div class="bio">
-                    <p class="tagline">Transformer le café en ligne de code.</p>
-                    <p class="location"><i class="fa-solid fa-location-dot"></i>Aubière, France</p>
-                    <div class="bio-details">
-                        <p>
-                            Je suis Johan Valentin, un étudiant en 3<sup>eme</sup> année à <strong>l'IUT informatique Clermont Auvergne</strong>.
-                            Je suis passionné par l'informatique depuis que je l'ai découvert au collège avec Scratch.
-                            C'est tout naturellement qu'au lycée, j'ai découvert et adopté Python, guidé par mon père qui était aussi mon professeur d'informatique.
-                            Aujourd'hui, je souhaite désormais m'orienter vers le développement web, en tant que développeur <strong>full-stack</strong>.
+        </header>
+        <nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-container">
+                <a href="#about-me" class="nav-item">
+                    <i class="fas fa-user menu-icon"></i>
+                    À Propos de Moi
+                </a>
+                <a href="#hobbies" class="nav-item">
+                    <i class="fas fa-heart menu-icon"></i>
+                    Passions
+                </a>
+                <a href="#experiences" class="nav-item">
+                    <i class="fas fa-briefcase menu-icon"></i>
+                    Expériences
+                </a>
+                <a href="#curriculum" class="nav-item">
+                    <i class="fas fa-graduation-cap menu-icon"></i>
+                    Cursus
+                </a>
+                <a href="#skills" class="nav-item">
+                    <i class="fas fa-tools menu-icon"></i>
+                    Compétences
+                </a>
+                <div class="nav-item">
+                    <a href="#projects">
+                        <i class="fas fa-folder-open menu-icon"></i>
+                        Projets
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#school-projects" class="nav-item">
+                            <i class="fas fa-university menu-icon"></i>
+                            Projets Académiques
+                        </a>
+                        <a href="#personal-projects" class="nav-item">
+                            <i class="fas fa-laptop-code menu-icon"></i>
+                            Projets Personnels
+                        </a>
+                    </div>
+                </div>
+                <a href="#contact" class="nav-item">
+                    <i class="fas fa-address-card menu-icon"></i>
+                    Contacts
+                </a>
+            </div>
+            <div class="menu-overlay"></div>
+        </nav>
+
+        <main>
+            <section id="about-me">
+                <article class="section-card">
+                    <h2>À Propos de Moi</h2>
+
+                    <div class="bio">
+                        <p class="tagline">
+                            Transformer le café en ligne de code.
                         </p>
-                        
-                        <div class="quick-links">
-                            <a href="#contact" class="project-link">
-                                Me Contacter
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <a href="docs/CV Johan Valentin.pdf" target="_blanks" class="cv-download">
-                                <i class="fas fa-download"></i> Téléchargez mon CV
-                            </a>
-                        </div>
-                        <!-- <div class="quick-stats">
+                        <p class="location">
+                            <i class="fa-solid fa-location-dot"></i>Aubière,
+                            France
+                        </p>
+                        <div class="bio-details">
+                            <p>
+                                Je suis Johan Valentin, un étudiant en 3<sup
+                                    >eme</sup
+                                >
+                                année à
+                                <strong
+                                    >l'IUT informatique Clermont
+                                    Auvergne</strong
+                                >. Je suis passionné par l'informatique depuis
+                                que je l'ai découvert au collège avec Scratch.
+                                C'est tout naturellement qu'au lycée, j'ai
+                                découvert et adopté Python, guidé par mon père
+                                qui était aussi mon professeur d'informatique.
+                                Aujourd'hui, je souhaite désormais m'orienter
+                                vers le développement web, en tant que
+                                développeur <strong>full-stack</strong>.
+                            </p>
+
+                            <div class="quick-links">
+                                <a href="#contact" class="project-link">
+                                    Me Contacter
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a
+                                    href="docs/CV Johan Valentin.pdf"
+                                    target="_blanks"
+                                    class="cv-download"
+                                >
+                                    <i class="fas fa-download"></i> Téléchargez
+                                    mon CV
+                                </a>
+                            </div>
+                            <!-- <div class="quick-stats">
                             <div class="stat-item">
                                 <div class="stat-number">2+</div>
                                 <div class="stat-label">Années d'Expériance</div>
@@ -117,371 +151,613 @@
                                 <div class="stat-label">Projets Compléter</div>
                             </div>
                         </div> -->
+                        </div>
                     </div>
-                </div>
-            </article>
-        </section>
+                </article>
+            </section>
 
-        <section id="hobbies">
-            <article class="section-card">
-                <h2>Passions & Intérêts</h2>
-                <div class="card-grid">
-                    <div class="hobby-card">
-                        <div class="hobby-icon">
-                            <i class="fa-solid fa-torii-gate"></i>
-                        </div>
-                        <h3>Culture Japonaise</h3>
-                        <p>
-                            Je suis passionné de culture japonaise,
-                            mais aussi de mangas et d'animés.
-                            J'apprends également le Japonais en autodidacte.
-                        </p>
-                        <p class="tagline">
-                            <span class="japanese-text" data-romanji="Watashi wa ongaku to nihongo ga suki desu" data-translation="J'aime la musique et le japonais">
-                                <ruby>私<rt>わたし</rt></ruby>は<ruby>音楽<rt>おんがく</rt></ruby>と<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです
-                            </span>
-                        </p>
-                    </div>
-                    <div class="hobby-card">
-                        <div class="hobby-icon">
-                            <i class="fas fa-music"></i>
-                        </div>
-                        <h3>Musique</h3>
-                        <p>
-                            J'accorde une grande importance à la musique.
-                            J'en écoute tous les jours, de tous les genres,
-                            et j'aime aussi découvrir comment elle est composée.
-                        </p>
-                    </div>
-                    <!-- Add more -->
-                </div>
-            </article>
-        </section>
-
-        <section id="curriculum">
-            <article class="section-card">
-                <h2>Cursus Scolaire</h2>
-                <div class="card-grid ">
-                    <div class="card-item curriculum-card">
-                        <img src="images/school/IUT-info.jpg" alt="IUT informatique Clermont-Auvergne">
-                        <div class="curriculum-info">
-                            <h3>IUT informatique Clermont-Auvergne (2023-2026)</h3>
-                            <p>
-                                Je poursuis aujourd'hui mes études à l'IUT informatique de Clermont-Auvergne.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card-item curriculum-card">
-                        <img src="images/school/lycee.jpeg" alt="Lycée Jérémie de la Rue">
-                        <div class="curriculum-info">
-                            <h3>Lycée Jérémie de la Rue (2020-2023)</h3>
-                            <p>
-                                J'ai obtenu mon baccalauréat avec mention en choisissant les spécialités
-                                <strong>Mathématiques</strong>, <strong>NSI</strong> ainsi que la spécialité <strong>Physique Chimie</strong>,
-                                abandonné en fin de première.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card-item curriculum-card">
-                        <img src="images/school/college.jpeg" alt="Collège Michel Sertvet">
-                        <div class="curriculum-info">
-                            <h3>Collège Michel Servet (2016-2020)</h3>
-                            <p>
-                                J'ai commencé mon cursus au collège Michel Servet à Charlieu, où j'ai eu mon Brevet.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Add more -->
-                </div>
-            </article>
-        </section>
-
-        <section id="skills">
-            <article class="section-card">
-                <h2>Compétences</h2>
-                <div class="card-grid">
-                    <div class="skill-card">
-                        <i class="fas fa-globe fa-3x"></i>
-                        <h3>Développement Web</h3>
-                        <div class="skill-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Vue.js</span>
-                            <span>PHP</span>
-                            <span>Blazor</span>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-code fa-3x"></i>
-                        <h3>Programmation</h3>
-                        <div class="skill-tags">
-                            <span>Python</span>
-                            <span>C</span>
-                            <span>C++</span>
-                            <span>C#</span>
-                            <span>Java</span>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-database fa-3x"></i>
-                        <h3>Base de Données</h3>
-                        <div class="skill-tags">
-                            <span>SQL</span>
-                            <span>PL/pgSQL</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-toolbox  fa-3x"></i>
-                        <h3>Outils & DevOps</h3>
-                        <div class="skill-tags">
-                            <span>Bash</span>
-                            <span>Git</span>
-                            <span>Docker</span>
-                        </div>
-                    </div>
-                    <!-- Add more -->
-                </div>
-            </article>
-        </section>
-
-        <section id="projects">
-            <article class="section-card">
-                <h2>Mes Projets</h2>
-        
-                <!-- Academic Projects -->
-                <div id="school-projects" class="project-subsection">
-                    <h3>Projets Académiques</h3>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project/fake-news/overview.png" alt="Application Quixo MAUI overview">
-                        </div>
-                        <div class="project-content">
-                            <span class="project-badge academic-badge">
-                                <i class="fas fa-university"></i>
-                                Académique
-                            </span>
-                            <h4>YouDebunk</h4>
-                            <p>
-                                Dans un monde où les fake-news sont de plus en plus fréquentes, il devient crucial de disposer d'outils efficaces pour identifier et contrer la désinformation.
-                                C'est avec cette idée en tête, qu'en équipe de cinq, nous avons conçu YouDebunk, une application web et mobile dédiée à la lutte contre les fake-news.
-                                Le but de ce projet est de proposer aux utilisateurs une plateforme collaborative sur laquelle ils peuvent consilté et partager des articles vérifiés.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-item">PHP</span>
-                                <span class="tech-item">SQL</span>
-                                <span class="tech-item">Android</span>
-                            </div>
-                            <a href="projets/fake-news.html" class="project-link">
-                                Voir le projet
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project/ihm/overview.png" alt="Application Quixo MAUI overview">
-                        </div>
-                        <div class="project-content">
-                            <span class="project-badge academic-badge">
-                                <i class="fas fa-university"></i>
-                                Académique
-                            </span>
-                            <h4>Application Quixo MAUI</h4>
-                            <p>
-                                En groupe de trois, nous avons développé un jeu avec le framework .NET MAUI.
-                                Ce projet est le plus important que j'ai réalisé et s'étendait sur quatre mois.
-                                Il impliquait la création de vues, une application console, un bot,
-                                ainsi que le data-binding et la persistance de données.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-item">C#</span>
-                                <span class="tech-item">.NET MAUI</span>
-                            </div>
-                            <a href="projets/ihm.html" class="project-link">
-                                Voir le projet
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project/bdd/overview.png" alt="Analyse Base de Données overview">
-                        </div>
-                        <div class="project-content">
-                            <span class="project-badge academic-badge">
-                                <i class="fas fa-university"></i>
-                                Académique
-                            </span>
-                            <h4>Conception de Base de Données</h4>
-                            <p>
-                                Dans le cadre de mes études, 
-                                j'ai travaillé en groupe de quatre pour concevoir une base de données
-                                pour une entreprise fictive de vente de meubles, inspirée d'Ikea.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-item">SQL</span>
-                                <span class="tech-item">Conception</span>
-                            </div>
-                            <a href="projets/bdd.html" class="project-link">
-                                Voir le projet
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-        
-                    <!-- Add more -->
-                </div>
-        
-                <!-- Personal Projects -->
-                <div id="personal-projects" class="project-subsection">
-                    <h3>Projets Personnels</h3>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project/pac-man/overview.png" alt="Pac-Man overview">
-                        </div>
-                        <div class="project-content">
-                            <span class="project-badge personal-badge">
-                                <i class="fas fa-laptop-code"></i>
-                                Personnel
-                            </span>
-                            <h4>Pac-Man</h4>
-                            <p>
-                                J'ai développé une version de Pac-Man en Python pendant mes années de lycée,
-                                en collaboration avec un ami. Notre objectif était de recréer le jeu de manière
-                                aussi fidèle que possible à l'original, en nous basant sur les algorithmes et les mécaniques de déplacement.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-item">Python</span>
-                                <span class="tech-item">Pygame</span>
-                            </div>
-                            <a href="projets/pac-man.html" class="project-link">
-                                Voir le projet
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project/tetris/overview.png" alt="Tetris overview">
-                        </div>
-                        <div class="project-content">
-                            <span class="project-badge personal-badge">
-                                <i class="fas fa-laptop-code"></i>
-                                Personnel
-                            </span>
-                            <h4>Tetris</h4>
-                            <p>
-                                Lors de mes études au lycée, j'ai développé un jeu de Tetris en utilisant Python
-                                et la bibliothèque Pygame. Ce projet a été l'occasion de me familiariser
-                                avec la programmation orientée objet.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-item">Python</span>
-                                <span class="tech-item">Pygame</span>
-                            </div>
-                            <a href="projets/tetris.html" class="project-link">
-                                Voir le projet
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-        
-                    <!-- Add more -->
-                </div>
-            </article>
-        </section>
-
-        <section id="contact">
-            <div class="section-card">
-                <h2>Mes Contacts</h2>
-                <div class="contact-container">
-                    <p class="contact-label">
-                        Vous avez une question ou voulez simplement me contacter ?<br>
-                        Choisissez votre méthode préférée :
-                    </p>
-                    
+            <section id="hobbies">
+                <article class="section-card">
+                    <h2>Passions & Intérêts</h2>
                     <div class="card-grid">
-                        <!-- Email -->
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fa-solid fa-envelope"></i>
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i class="fa-solid fa-torii-gate"></i>
                             </div>
-                            <div class="contact-info">
-                                <h4>Adresse Email</h4>
-                                <a href="mailto:johan.valentin@proton.me" class="contact-detail">
-                                    johan.valentin@proton.me
+                            <h3>Culture Japonaise</h3>
+                            <p>
+                                Je suis passionné de culture japonaise, mais
+                                aussi de mangas et d'animés. J'apprends
+                                également le Japonais en autodidacte.
+                            </p>
+                            <p class="tagline">
+                                <span
+                                    class="japanese-text"
+                                    data-romanji="Watashi wa ongaku to nihongo ga suki desu"
+                                    data-translation="J'aime la musique et le japonais"
+                                >
+                                    <ruby>私<rt>わたし</rt></ruby
+                                    >は<ruby>音楽<rt>おんがく</rt></ruby
+                                    >と<ruby>日本語<rt>にほんご</rt></ruby
+                                    >が<ruby>好<rt>す</rt></ruby
+                                    >きです
+                                </span>
+                            </p>
+                        </div>
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <h3>Musique</h3>
+                            <p>
+                                J'accorde une grande importance à la musique.
+                                J'en écoute tous les jours, de tous les genres,
+                                et j'aime aussi découvrir comment elle est
+                                composée.
+                            </p>
+                        </div>
+                        <!-- Add -->
+                    </div>
+                </article>
+            </section>
+
+            <section id="experiences">
+                <article class="section-card">
+                    <h2>Expériences Professionnelles</h2>
+                    <div class="experience-list">
+                        <!-- Experience 2: Moontech -->
+                        <div class="experience-card">
+                            <div class="experience-card-header">
+                                <div class="experience-role-info">
+                                    <h3>
+                                        Stage - Développement d'une application
+                                        web interne de gestion de conflit
+                                        d'intérêts
+                                    </h3>
+                                    <div class="experience-company">
+                                        <i class="fas fa-building"></i>
+                                        Moontech
+                                    </div>
+                                </div>
+                                <div class="experience-dates">
+                                    <span class="experience-date-badge">
+                                        16 février - 9 mai 2026
+                                    </span>
+                                    <span class="experience-date-badge">
+                                        29 juin - 1 août 2026
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <div class="experience-body">
+                                <p>
+                                    Moontech est une entreprise spécialisée dans
+                                    les audits de cybersécurité qui avait besoin
+                                    d'une solution interne pour identifier et
+                                    prévenir les conflits d'intérêts. Dans le
+                                    cadre de mon stage de fin d'études, j'ai été
+                                    chargé de développer cette application de
+                                    bout en bout et en totale autonomie.
+                                </p>
+                                <p>
+                                    L'outil permet de centraliser la gestion des
+                                    entreprise clientes et d'enregistrant les
+                                    audits qui leur sont associés. L'application
+                                    repose sur un questionnaire dynamique qui
+                                    devras détecter automatiquement les risques
+                                    de conflits d'intérêts avant les missions.
+                                    Au-delà de l'aspect fonctionnel,
+                                    l'application possède un enjeu juridique,
+                                    puisqu'elle viras aussi de preuve de
+                                    conformité réglementaire auprès des
+                                    autorités. Ce projet me permet de prendre en
+                                    main l'intégralité du cycle de
+                                    développement, de la modélisation à la
+                                    programmation, tout en confirmant ma
+                                    capacité à mener un projet technique
+                                    complexe de manière autonome.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Experience 1: AC Environnement -->
+                        <div class="experience-card">
+                            <div class="experience-card-header">
+                                <div class="experience-role-info">
+                                    <h3>Stage - Développeur Full Stack</h3>
+                                    <div class="experience-company">
+                                        <i class="fas fa-building"></i>
+                                        AC Environnement
+                                    </div>
+                                </div>
+                                <div class="experience-dates">
+                                    <span class="experience-date-badge">
+                                        16 juin - 8 août 2025
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Kotlin</span>
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="experience-body">
+                                <ul>
+                                    <li>
+                                        Réalisation d'un client de communication
+                                        entre serveurs.
+                                    </li>
+                                    <li>
+                                        Participation au développement
+                                        d'interfaces web avec Angular.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="curriculum">
+                <article class="section-card">
+                    <h2>Cursus Scolaire</h2>
+                    <div class="card-grid">
+                        <div class="card-item curriculum-card">
+                            <img
+                                src="images/school/IUT-info.jpg"
+                                alt="IUT informatique Clermont-Auvergne"
+                            />
+                            <div class="curriculum-info">
+                                <h3>
+                                    IUT informatique Clermont-Auvergne
+                                    (2023-2026)
+                                </h3>
+                                <p>
+                                    Je poursuis aujourd'hui mes études à l'IUT
+                                    informatique de Clermont-Auvergne.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-item curriculum-card">
+                            <img
+                                src="images/school/lycee.jpeg"
+                                alt="Lycée Jérémie de la Rue"
+                            />
+                            <div class="curriculum-info">
+                                <h3>Lycée Jérémie de la Rue (2020-2023)</h3>
+                                <p>
+                                    J'ai obtenu mon baccalauréat avec mention en
+                                    choisissant les spécialités
+                                    <strong>Mathématiques</strong>,
+                                    <strong>NSI</strong> ainsi que la spécialité
+                                    <strong>Physique Chimie</strong>, abandonné
+                                    en fin de première.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-item curriculum-card">
+                            <img
+                                src="images/school/college.jpeg"
+                                alt="Collège Michel Sertvet"
+                            />
+                            <div class="curriculum-info">
+                                <h3>Collège Michel Servet (2016-2020)</h3>
+                                <p>
+                                    J'ai commencé mon cursus au collège Michel
+                                    Servet à Charlieu, où j'ai eu mon Brevet.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Add more -->
+                    </div>
+                </article>
+            </section>
+
+            <section id="skills">
+                <article class="section-card">
+                    <h2>Compétences</h2>
+                    <div class="card-grid">
+                        <div class="skill-card">
+                            <i class="fas fa-globe fa-3x"></i>
+                            <h3>Développement Web</h3>
+                            <div class="skill-tags">
+                                <span>TypeScript</span>
+                                <span>Vue.js</span>
+                                <span>React</span>
+                                <span>Angular</span>
+                                <span>Laravel</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-code fa-3x"></i>
+                            <h3>Programmation</h3>
+                            <div class="skill-tags">
+                                <span>Python</span>
+                                <span>C</span>
+                                <span>C++</span>
+                                <span>C#</span>
+                                <span>Java</span>
+                                <span>Kotlin</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database fa-3x"></i>
+                            <h3>Base de Données</h3>
+                            <div class="skill-tags">
+                                <span>PostgreSQL</span>
+                                <span>MySQL</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-toolbox fa-3x"></i>
+                            <h3>Outils & DevOps</h3>
+                            <div class="skill-tags">
+                                <span>Bash</span>
+                                <span>Git</span>
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                            </div>
+                        </div>
+                        <!-- Add more -->
+                    </div>
+                </article>
+            </section>
+
+            <section id="projects">
+                <article class="section-card">
+                    <h2>Mes Projets</h2>
+
+                    <!-- Academic Projects -->
+                    <div id="school-projects" class="project-subsection">
+                        <h3>Projets Académiques</h3>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="images/project/loopin/overview.png"
+                                    alt="Loopin' overview"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-badge academic-badge">
+                                    <i class="fas fa-university"></i>
+                                    Académique
+                                </span>
+                                <h4>Loopin'</h4>
+                                <p>
+                                    Les plateformes de streaming comme Spotify
+                                    ou Deezer ont aujourd'hui tendance à nous
+                                    enfermer dans une routine musicale en nous
+                                    proposant toujours les mêmes styles de
+                                    morceaux. C’est de ce constat qu’est née
+                                    <strong>Loopin'</strong>, une application
+                                    développée en équipe de trois en parallèle
+                                    de nos stages/alternances de fin d'études.
+                                    L’objectif est de rendre l’utilisateur
+                                    pleinement actif dans ses découvertes grâce
+                                    à une interface intuitive inspirée des feeds
+                                    verticaux comme TikTok ou Reels. En
+                                    combinant plusieurs algorithmes transparents
+                                    et un catalogue de 110 millions de titres,
+                                    Loopin' a pour ambition de s'adapte aux
+                                    réactions des utilisateurs pour proposer des
+                                    recommandations pertinentes.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-item">Python</span>
+                                    <span class="tech-item">FastAPI</span>
+                                    <span class="tech-item">PostgreSQL</span>
+                                    <span class="tech-item">Vue.js</span>
+                                </div>
+                                <a
+                                    href="projets/loopin.html"
+                                    class="project-link"
+                                >
+                                    Voir le projet
+                                    <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
 
-                        <!-- Phone -->
-                        <div class="contact-card">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="images/project/fake-news/overview.png"
+                                    alt="Application Quixo MAUI overview"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-badge academic-badge">
+                                    <i class="fas fa-university"></i>
+                                    Académique
+                                </span>
+                                <h4>YouDebunk</h4>
+                                <p>
+                                    Dans un monde où les fake-news sont de plus
+                                    en plus fréquentes, il devient crucial de
+                                    disposer d'outils efficaces pour identifier
+                                    et contrer la désinformation. C'est avec
+                                    cette idée en tête, qu'en équipe de cinq,
+                                    nous avons conçu YouDebunk, une application
+                                    web et mobile dédiée à la lutte contre les
+                                    fake-news. Le but de ce projet est de
+                                    proposer aux utilisateurs une plateforme
+                                    collaborative sur laquelle ils peuvent
+                                    consilté et partager des articles vérifiés.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-item">PHP</span>
+                                    <span class="tech-item">SQL</span>
+                                    <span class="tech-item">Android</span>
+                                </div>
+                                <a
+                                    href="projets/fake-news.html"
+                                    class="project-link"
+                                >
+                                    Voir le projet
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="images/project/ihm/overview.png"
+                                    alt="Application Quixo MAUI overview"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-badge academic-badge">
+                                    <i class="fas fa-university"></i>
+                                    Académique
+                                </span>
+                                <h4>Application Quixo MAUI</h4>
+                                <p>
+                                    En groupe de trois, nous avons développé un
+                                    jeu avec le framework .NET MAUI. Ce projet
+                                    est le plus important que j'ai réalisé et
+                                    s'étendait sur quatre mois. Il impliquait la
+                                    création de vues, une application console,
+                                    un bot, ainsi que le data-binding et la
+                                    persistance de données.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-item">C#</span>
+                                    <span class="tech-item">.NET MAUI</span>
+                                </div>
+                                <a href="projets/ihm.html" class="project-link">
+                                    Voir le projet
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="images/project/bdd/overview.png"
+                                    alt="Analyse Base de Données overview"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-badge academic-badge">
+                                    <i class="fas fa-university"></i>
+                                    Académique
+                                </span>
+                                <h4>Conception de Base de Données</h4>
+                                <p>
+                                    Dans le cadre de mes études, j'ai travaillé
+                                    en groupe de quatre pour concevoir une base
+                                    de données pour une entreprise fictive de
+                                    vente de meubles, inspirée d'Ikea.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-item">SQL</span>
+                                    <span class="tech-item">Conception</span>
+                                </div>
+                                <a href="projets/bdd.html" class="project-link">
+                                    Voir le projet
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add more -->
+                    </div>
+
+                    <!-- Personal Projects -->
+                    <div id="personal-projects" class="project-subsection">
+                        <h3>Projets Personnels</h3>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="images/project/pac-man/overview.png"
+                                    alt="Pac-Man overview"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-badge personal-badge">
+                                    <i class="fas fa-laptop-code"></i>
+                                    Personnel
+                                </span>
+                                <h4>Pac-Man</h4>
+                                <p>
+                                    J'ai développé une version de Pac-Man en
+                                    Python pendant mes années de lycée, en
+                                    collaboration avec un ami. Notre objectif
+                                    était de recréer le jeu de manière aussi
+                                    fidèle que possible à l'original, en nous
+                                    basant sur les algorithmes et les mécaniques
+                                    de déplacement.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-item">Python</span>
+                                    <span class="tech-item">Pygame</span>
+                                </div>
+                                <a
+                                    href="projets/pac-man.html"
+                                    class="project-link"
+                                >
+                                    Voir le projet
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="images/project/tetris/overview.png"
+                                    alt="Tetris overview"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-badge personal-badge">
+                                    <i class="fas fa-laptop-code"></i>
+                                    Personnel
+                                </span>
+                                <h4>Tetris</h4>
+                                <p>
+                                    Lors de mes études au lycée, j'ai développé
+                                    un jeu de Tetris en utilisant Python et la
+                                    bibliothèque Pygame. Ce projet a été
+                                    l'occasion de me familiariser avec la
+                                    programmation orientée objet.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-item">Python</span>
+                                    <span class="tech-item">Pygame</span>
+                                </div>
+                                <a
+                                    href="projets/tetris.html"
+                                    class="project-link"
+                                >
+                                    Voir le projet
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Add more -->
+                    </div>
+                </article>
+            </section>
+
+            <section id="contact">
+                <div class="section-card">
+                    <h2>Mes Contacts</h2>
+                    <div class="contact-container">
+                        <p class="contact-label">
+                            Vous avez une question ou voulez simplement me
+                            contacter ?<br />
+                            Choisissez votre méthode préférée :
+                        </p>
+
+                        <div class="card-grid">
+                            <!-- Email -->
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h4>Adresse Email</h4>
+                                    <a
+                                        href="mailto:johan.valentin@proton.me"
+                                        class="contact-detail"
+                                    >
+                                        johan.valentin@proton.me
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h4>Téléphone</h4>
+                                    <a
+                                        href="tel:+638024706"
+                                        class="contact-detail"
+                                    >
+                                        06 38 02 47 06
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="contact-card social-links">
                             <div class="contact-icon">
-                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
                             </div>
                             <div class="contact-info">
-                                <h4>Téléphone</h4>
-                                <a href="tel:+638024706" class="contact-detail">
-                                    06 38 02 47 06
-                                </a>
+                                <h4>Suivez Moi</h4>
+                                <div class="social-buttons">
+                                    <a
+                                        href="https://www.linkedin.com/in/johan-valentin-063354327"
+                                        target="_blank"
+                                        class="social-link"
+                                    >
+                                        <i class="fab fa-linkedin"></i>
+                                        LinkedIn
+                                    </a>
+                                    <a
+                                        href="https://github.com/hyrhoo"
+                                        target="_blank"
+                                        class="social-link"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                        GitHub
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Social Links -->
-                    <div class="contact-card social-links">
-                        <div class="contact-icon">
-                            <i class="fa-solid fa-share-nodes"></i>
-                        </div>
-                        <div class="contact-info">
-                            <h4>Suivez Moi</h4>
-                            <div class="social-buttons">
-                                <a href="https://www.linkedin.com/in/johan-valentin-063354327" target="_blank" class="social-link">
-                                    <i class="fab fa-linkedin"></i>
-                                    LinkedIn
-                                </a>
-                                <a href="https://github.com/hyrhoo" target="_blank" class="social-link">
-                                    <i class="fab fa-github"></i>
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
+                    <div class="cv-download-container">
+                        <p>
+                            Plus de détails professionnel<br />
+                            <a
+                                href="docs/CV Johan Valentin.pdf"
+                                target="_blank"
+                                class="cv-download"
+                            >
+                                <i class="fas fa-download"></i> Téléchargez mon
+                                CV
+                            </a>
+                        </p>
                     </div>
                 </div>
+            </section>
+        </main>
 
-                <div class="cv-download-container">
-                    <p>Plus de détailes professionnel<br>
-                    <a href="docs/CV Johan Valentin.pdf" target="_blank" class="cv-download">
-                        <i class="fas fa-download"></i> Téléchargez mon CV
-                    </a>
-                    </p>
-                </div>
+        <footer>
+            <div id="footer-contact">
+                <a href="mailto:johan.valentin@proton.me">
+                    <i class="fas fa-envelope"></i>
+                    johan.valentin@proton.me
+                </a>
+                <a href="tel:+68024706">
+                    <i class="fas fa-phone"></i>
+                    06 38 02 47 06
+                </a>
             </div>
-        </section>
-    </main>
+            <p>
+                © <span class="footer-year">2026</span> Johan Valentin. Tous
+                droits réservés.
+            </p>
+        </footer>
 
-    <footer>
-        <div id="footer-contact">
-            <a href="mailto:johan.valentin@proton.me">
-                <i class="fas fa-envelope"></i>
-                johan.valentin@proton.me
-            </a>
-            <a href="tel:+68024706">
-                <i class="fas fa-phone"></i>
-                06 38 02 47 06
-            </a>
-        </div>
-        <p>© 2025 Johan Valentin. Tous droits réservés.</p>
-    </footer>
-
-    <button id="top-button" onclick="toTheTop()">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-</body>
+        <button id="top-button" onclick="toTheTop()">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </body>
 </html>

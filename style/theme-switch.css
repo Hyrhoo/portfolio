@@ -56,12 +56,12 @@ body.dark-theme .theme-button .sun-icon {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .theme-switch-wrapper {
         bottom: 15px;
         left: 15px;
     }
-    
+
     .theme-button {
         width: 35px;
         height: 35px;

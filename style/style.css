@@ -1,14 +1,15 @@
-@import url('header.css');
-@import url('section-card.css');
-@import url('nav.css');
-@import url('about-me.css');
-@import url('hobbie.css');
-@import url('curriculum.css');
-@import url('skill.css');
-@import url('project.css');
-@import url('contact.css');
-@import url('dark-theme.css');
-@import url('theme-switch.css');
+@import url("header.css");
+@import url("section-card.css");
+@import url("nav.css");
+@import url("about-me.css");
+@import url("hobbie.css");
+@import url("curriculum.css");
+@import url("experience.css");
+@import url("skill.css");
+@import url("project.css");
+@import url("contact.css");
+@import url("dark-theme.css");
+@import url("theme-switch.css");
 
 /* Base style */
 html {
@@ -19,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -71,8 +72,8 @@ footer {
 #footer-contact a {
     color: #fff;
     text-decoration: none;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     gap: 8px;
     transition: 0.3s;
     padding: 5px;
@@ -85,7 +86,7 @@ footer {
 }
 
 #top-button {
-    position: fixed;;
+    position: fixed;
     bottom: 15px;
     right: 15px;
     width: 50px;
@@ -95,7 +96,7 @@ footer {
     border: 2px solid #3498db;
     color: #3498db;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
@@ -105,10 +106,10 @@ footer {
     background: #3498db;
     color: #fff;
     transform: translateY(-1px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     body {
         font-size: 14px;
     }
@@ -116,7 +117,7 @@ footer {
     section {
         scroll-margin-top: 0.25em;
     }
-    
+
     .project-subsection {
         scroll-margin-top: 1em;
     }

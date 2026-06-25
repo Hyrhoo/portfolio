@@ -56,17 +56,17 @@
     margin-top: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .quick-stats {
         justify-content: center;
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .skill-tags {
         justify-content: center;
     }
-    
+
     .age-location {
         justify-content: center;
     }

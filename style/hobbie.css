@@ -5,7 +5,7 @@
     background: #fff;
     border-radius: 12px;
     transition: transform 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .hobby-icon {
@@ -22,7 +22,6 @@
     font-size: 1.8rem;
     color: #3498db;
 }
-
 
 /* Japanese text tooltip */
 .japanese-text {
@@ -44,7 +43,9 @@
     font-size: 14px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
+    transition:
+        opacity 0.3s,
+        visibility 0.3s;
     pointer-events: none;
     z-index: 100;
     width: max-content;
@@ -62,7 +63,9 @@
     border-color: transparent transparent #3498db transparent;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
+    transition:
+        opacity 0.3s,
+        visibility 0.3s;
     pointer-events: none;
     z-index: 100;
 }
@@ -73,7 +76,7 @@
     visibility: visible;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .japanese-text::after {
         font-size: 12px;
         padding: 6px 10px;

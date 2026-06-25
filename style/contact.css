@@ -19,7 +19,7 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .contact-icon {
@@ -108,7 +108,7 @@
     margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .contact-card {
         flex-direction: column;
         text-align: center;

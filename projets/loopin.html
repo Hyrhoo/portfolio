@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Conception de Base de Données - Johan Valentin</title>
+        <title>Loopin' - Johan Valentin</title>
         <link rel="shortcut icon" href="../images/photo.png" />
         <link
             rel="stylesheet"
@@ -26,7 +26,7 @@
 
         <div id="background"></div>
         <header id="project-header">
-            <h1>Conception de Base de Données</h1>
+            <h1>Loopin'</h1>
         </header>
 
         <nav>
@@ -88,7 +88,7 @@
         <main>
             <section id="project-hero">
                 <article class="section-card">
-                    <h2>Conception de Base de Données</h2>
+                    <h2>Loopin'</h2>
                     <div class="project-hero-grid">
                         <div class="project-header-content">
                             <span class="project-badge academic-badge">
@@ -96,31 +96,52 @@
                                 Projet Académique
                             </span>
                             <p class="project-excerpt">
-                                Dans le cadre de mes études, j'ai travaillé en
-                                groupe de quatre pour concevoir une base de
-                                données pour une entreprise fictive de vente de
-                                meubles, inspirée d'Ikea.
+                                Les plateformes de streaming comme Spotify ou
+                                Deezer ont aujourd'hui tendance à nous enfermer
+                                dans une routine musicale en nous proposant
+                                toujours les mêmes styles de morceaux. C’est de
+                                ce constat qu’est née
+                                <strong>Loopin'</strong>, une application
+                                développée en équipe de trois en parallèle de
+                                nos stages/alternances de fin d'études.
+                                L’objectif est de rendre l’utilisateur
+                                pleinement actif dans ses découvertes grâce à
+                                une interface intuitive inspirée des feeds
+                                verticaux comme TikTok ou Reels. En combinant
+                                plusieurs algorithmes transparents et un
+                                catalogue de 110 millions de titres, Loopin' a
+                                pour ambition de s'adapte aux réactions des
+                                utilisateurs pour proposer des recommandations
+                                pertinentes.
                             </p>
 
                             <div class="project-meta">
                                 <div class="meta-item">
                                     <i class="fas fa-calendar-alt"></i>
-                                    <span>2023-2024</span>
+                                    <span>2025-2026</span>
                                 </div>
                                 <div class="meta-item">
                                     <i class="fas fa-users"></i>
-                                    <span>Équipe de 4</span>
+                                    <span>Équipe de 3</span>
                                 </div>
                             </div>
 
                             <div class="skill-tags">
                                 <span class="tech-item">
-                                    <i class="fas fa-database"></i>
-                                    SQL
+                                    <i class="fab fa-python"></i>
+                                    Python
                                 </span>
                                 <span class="tech-item">
-                                    <i class="fas fa-project-diagram"></i>
-                                    Conception
+                                    <i class="fas fa-bolt"></i>
+                                    FastAPI
+                                </span>
+                                <span class="tech-item">
+                                    <i class="fas fa-database"></i>
+                                    PostgreSQL
+                                </span>
+                                <span class="tech-item">
+                                    <i class="fab fa-vuejs"></i>
+                                    Vue.js
                                 </span>
                             </div>
                         </div>
@@ -128,8 +149,8 @@
                         <div class="project-hero-visuals">
                             <div class="hero-image-container">
                                 <img
-                                    src="../images/project/bdd/overview.png"
-                                    alt="Aperçu du projet"
+                                    src="../images/project/loopin/overview.png"
+                                    alt="Aperçu du projet Loopin'"
                                 />
                             </div>
 
@@ -138,7 +159,31 @@
                                     <i class="fas fa-images"></i>
                                     Voir la galerie
                                 </a>
+                                <a
+                                    href="https://loopin.alexis-dumain.fr/"
+                                    target="_blank"
+                                    class="project-link"
+                                >
+                                    <i class="fas fa-play-circle"></i>
+                                    Démo Live
+                                </a>
                             </div>
+                            <p
+                                style="
+                                    font-size: 0.85rem;
+                                    color: #e67e22;
+                                    margin-top: 12px;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 6px;
+                                    justify-content: center;
+                                    width: 100%;
+                                "
+                            >
+                                <i class="fas fa-exclamation-triangle"></i>
+                                Projet auto-hébergé : la démo live peut être
+                                indisponible.
+                            </p>
                         </div>
                     </div>
                 </article>
@@ -149,30 +194,49 @@
                     <h2 class="section-title">Description du Projet</h2>
                     <div class="project-content">
                         <p>
-                            Ce projet consistait à imaginer et concevoir une
-                            base de données pour une entreprise vendant des
-                            produits. La base de données devait gérer les
-                            produits, les commandes, les producteurs, les
-                            clients, les adresses internationales et les taxes.
+                            Pour tenir la charge face à un jeu de données massif
+                            de plus de 110 millions de pistes hébergé sur notre
+                            serveur personnel, l'application a nécessité une
+                            optimisation très poussée de sa base de données et
+                            de ses algorithmes. C'était une condition
+                            indispensable pour garantir de réponse rapides et
+                            remonter des résultats cohérents en temps réel. Pour
+                            permettre de proposer des musiques en toutes
+                            légalité, l'application se connecte à l'API publique
+                            de Deezer afin de récupérer dynamiquement les
+                            métadonnées, les jaquettes d'albums et les previews
+                            audio de 30 secondes.
                         </p>
                         <p>
-                            Ce projet a été réalisé en groupe de quatre et nous
-                            avons choisi de modéliser une entreprise type Ikea
-                            vendant des kits de meubles. En tant que passionné
-                            de conception de bases de données, j'ai pris
-                            l'initiative de la conception et je sollicitais les
-                            avis de mes coéquipiers.
+                            Le cœur de Loopin' réside dans la diversité et la
+                            transparence de ses moteurs de recommandation,
+                            laissant le choix à l'utilisateur entre trois
+                            algorithmes distincts qu'il peut utiliser. Le
+                            premier est un système de clustering par zones de
+                            BPM qui regroupe les morceaux selon des dynamiques
+                            de rythmes proches. Le deuxième se base sur la
+                            chronologie : il sélectionne des titres sortis dans
+                            une fenêtre de +/- 2 ans, et retient les meilleurs
+                            résultats selon une distance avec le style et la
+                            popularité de chaque titre. Enfin, le troisième
+                            algorithme s'appuie sur la popularité globale tout
+                            en maintenant une stricte cohérence des styles
+                            musicaux. L'application propose également un système
+                            de radio depuis une playlist qui va proposer des
+                            recommandations en fonction de toutes les musiques
+                            de cette playlist selon les critères de l'algorithme
+                            choisi.
                         </p>
                         <p>
-                            De par le domaine de l'entreprise choisi, nous avons
-                            dû créé des tables pour les meubles et les pièces
-                            les composant, ainsi que pour les fabricants de ces
-                            pièces. Une fois la base de données créée, nous
-                            avons effectué des requêtes. J'ai été le principale
-                            acteur de cette tâche en raison de mes compétences
-                            en bases de données. La complexité de notre base de
-                            données a rendu cette étape plus difficile que
-                            prévu.
+                            Découpé par nos périodes en entreprise, ce projet a
+                            représenté un défi humain et technique important.
+                            Suite au départ de deux membres de l'équipe
+                            d'origine en début d'année, nous avons dû recentrer
+                            nos efforts sur le développement de ce MVP.
+                            Aujourd'hui, l'application est pleinement
+                            fonctionnelle, et nous sommes fiers du résultat, au
+                            point de l'utiliser nous-mêmes pour faire de
+                            nouvelles découvertes musicales.
                         </p>
                     </div>
 
@@ -181,15 +245,37 @@
                         <div class="thumbnail-container">
                             <div class="thumbnail-grid">
                                 <img
-                                    src="../images/project/bdd/1.png"
-                                    alt="MCD de la Base de données"
+                                    src="../images/project/loopin/overview.png"
+                                    alt="Logo de l'application"
                                     class="thumbnail"
                                 />
                                 <img
-                                    src="../images/project/bdd/2.png"
-                                    alt="MLD de la Base de données"
+                                    src="../images/project/loopin/1.png"
+                                    alt="Sélectionnez un algoritme écoutez des recommandations"
                                     class="thumbnail"
                                 />
+                                <img
+                                    src="../images/project/loopin/2.png"
+                                    alt="Enregistrez vos musique dans vos playlist"
+                                    class="thumbnail"
+                                />
+                                <img
+                                    src="../images/project/loopin/3.png"
+                                    alt="Visualisez les statistiques des différentes musiques sur l'application"
+                                    class="thumbnail"
+                                />
+                                <div class="thumbnail-video-container">
+                                    <video
+                                        src="../images/project/loopin/4.mp4"
+                                        alt="Démo vidéo de l'application Loopin'"
+                                        cover="../images/project/loopin/cover-4.jpg"
+                                        class="thumbnail"
+                                        preload="metadata"
+                                    ></video>
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <button class="expand-button">
@@ -203,6 +289,14 @@
                         <a onclick="history.back()" class="project-link">
                             <i class="fas fa-arrow-left"></i>
                             Retour aux projets
+                        </a>
+                        <a
+                            href="https://loopin.alexis-dumain.fr/"
+                            target="_blank"
+                            class="project-link"
+                        >
+                            <i class="fas fa-play-circle"></i>
+                            Démo Live
                         </a>
                     </div>
                 </div>

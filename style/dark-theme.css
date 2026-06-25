@@ -41,19 +41,19 @@ body.dark-theme .dropdown-menu {
     background: #2c2c2c;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     body.dark-theme .nav-container {
         background-color: #1e1e24;
     }
-    
+
     body.dark-theme .nav-item {
         border-bottom: 1px solid #333;
     }
-    
+
     body.dark-theme .dropdown-menu {
         background-color: #262631;
     }
-    
+
     body.dark-theme .dropdown-menu .nav-item:hover {
         background-color: #16213e;
     }
@@ -62,7 +62,9 @@ body.dark-theme .dropdown-menu {
 /* Section card styles */
 body.dark-theme .section-card {
     background: #1e1e24;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 body.dark-theme .section-card h2 {
@@ -85,7 +87,9 @@ body.dark-theme .stat-item {
 /* Hobby card styles */
 body.dark-theme .hobby-card {
     background: #1e1e24;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 body.dark-theme .hobby-icon {
@@ -99,7 +103,9 @@ body.dark-theme .hobby-icon i {
 /* Curriculum styles */
 body.dark-theme .curriculum-card {
     background: #1e1e24;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 body.dark-theme .curriculum-info {
@@ -110,7 +116,9 @@ body.dark-theme .curriculum-info {
 body.dark-theme .skill-card {
     background: #1e1e24;
     border-left: 4px solid #4dabf7;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 body.dark-theme .skill-tags span {
@@ -122,7 +130,9 @@ body.dark-theme .skill-tags span {
 /* Project styles */
 body.dark-theme .project-card {
     background: #1e1e24;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 body.dark-theme .project-subsection h3 {
@@ -181,7 +191,9 @@ body.dark-theme .project-content p {
 }
 
 body.dark-theme .hero-image-container {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 body.dark-theme .thumbnail {
@@ -190,7 +202,9 @@ body.dark-theme .thumbnail {
 }
 
 body.dark-theme .thumbnail:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(77, 171, 247, 0.3);
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(77, 171, 247, 0.3);
 }
 
 body.dark-theme .expand-button {
@@ -240,7 +254,9 @@ body.dark-theme .contact-label {
 
 body.dark-theme .contact-card {
     background: #1e1e24;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 body.dark-theme .contact-icon {
