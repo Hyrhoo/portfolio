@@ -87,6 +87,7 @@
 .experience-body {
     color: #4a5568;
     font-size: 0.95em;
+    text-align: justify;
 }
 
 .experience-body ul {

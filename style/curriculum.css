@@ -15,4 +15,9 @@
 .curriculum-info {
     padding: 20px;
     color: #2c3e50;
+    /*text-align: justify;*/
 }
+
+/*.curriculum-info > p {
+    text-align: justify;
+}*/

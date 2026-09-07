@@ -1,6 +1,12 @@
+/* Passions en grille 2x2 sur desktop */
+#hobbies .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /* Style for the Hobby section */
 .hobby-card {
-    text-align: center;
+    text-align: justify;
+    text-align-last: center;
     padding: 30px;
     background: #fff;
     border-radius: 12px;
@@ -77,6 +83,10 @@
 }
 
 @media (max-width: 780px) {
+    #hobbies .card-grid {
+        grid-template-columns: 1fr;
+    }
+
     .japanese-text::after {
         font-size: 12px;
         padding: 6px 10px;

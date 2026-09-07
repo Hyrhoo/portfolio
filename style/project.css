@@ -46,6 +46,7 @@
 .project-content {
     flex: 1.5;
     padding: 15px;
+    text-align: justify;
 }
 
 .project-content h4 {
